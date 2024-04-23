@@ -28,5 +28,7 @@ public class OrdenEntity {
     @JoinColumn(name = "IdClienteFk") 
     private ClienteEntity cliente;
 
-
+    @ManyToOne
+    @JoinColumn(name = "IdEstadoFk")
+    private EstadoEntity estado;
 }
