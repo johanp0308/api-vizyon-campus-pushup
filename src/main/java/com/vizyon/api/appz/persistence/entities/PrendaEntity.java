@@ -29,4 +29,7 @@ public class PrendaEntity {
     @JoinColumn(name = "IdTIpoProteccion")
     private TipoProteccionEntity proteccionEntity;
 
+    @ManyToOne
+    @JoinColumn(name = "IdEstadoFk")
+    private EstadoEntity estado;
 }
